@@ -2,6 +2,7 @@
  Windows Print Spooler Vulnerability (CVE2021-34527)
 
 Pre-exploitation
+
 Attacker
 1. Install Impacket and python script to exploit the vulnerability
 2. Install metasploit (if you aren't using Kali), create a malicious dll as a faked printer driver and set up a listener on port 1443
