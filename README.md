@@ -1,4 +1,5 @@
 # PrintNightmare Windows Print Spooler Vulnerability (CVE2021-34527)
+Ref: https://github.com/m8sec/CVE-2021-34527?tab=readme-ov-file
 
 Pre-exploitation
 
@@ -23,8 +24,6 @@ Target machine
 **e.g. replace <username> with a domain user account login credential
 
 # Guides to emulate the vulnerability
-Ref: https://github.com/m8sec/CVE-2021-34527?tab=readme-ov-file
-
 Post-exploitation
 Download 2 scripts to discovery local machine and domain group info, then send them back to attacker listener. 
 
