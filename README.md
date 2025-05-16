@@ -1,7 +1,7 @@
 # PrintNightmare Windows Print Spooler Vulnerability (CVE2021-34527)
 Ref: https://github.com/m8sec/CVE-2021-34527?tab=readme-ov-file
 
-Pre-exploitation
+##Pre-exploitation
 
 Attacker
 1. Install Impacket and python script to exploit the vulnerability
