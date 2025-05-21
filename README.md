@@ -9,7 +9,7 @@ Ref: https://thedutchhacker.com/how-to-exploit-the-printnightmare-cve-2021-34527
 3. Run SMB server service and modify the config file
 4. Place the faked printer driver to the SMB path
 5. Ensure the target is vulnerable to MS-RPRN (Print System Remote Protocol) by running (the vulnerability can't be exploited if the protocol isn't enabled)
-   ```powershell
+   ```console
    rpcdump.py <username>:<password>:@<target IP addr> | grep MS-RPRN
    ```
 
