@@ -16,8 +16,8 @@ set "BackupFile=backup_*"
 
 REM Find all ADRecon-*.zip file
 for /d %%F in (%ADReconFile%) do (
-	REM Set folder name
-	set "folderName=%%F"
+    REM Set folder name
+    set "folderName=%%F"
     
     REM Create zip file name by appending .zip
     set "zipName=!folderName!.zip"
