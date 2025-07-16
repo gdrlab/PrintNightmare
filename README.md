@@ -7,7 +7,7 @@ Ref: https://thedutchhacker.com/how-to-exploit-the-printnightmare-cve-2021-34527
 1. Install Impacket and python script to exploit the vulnerability
 2. Install metasploit (if you aren't using Kali), create a malicious dll as a faked printer driver and set up a listener on port 1443
 3. Run SMB server service and modify the config file
-4. Place the faked printer driver to the SMB path
+4. Place the faked printer driver ```reverse.dll``` to the SMB path
 5. Ensure the target is vulnerable to MS-RPRN (Print System Remote Protocol) by running (the vulnerability can't be exploited if the protocol isn't enabled)
    ```console
    rpcdump.py <username>:<password>:@<target IP addr> | grep MS-RPRN
